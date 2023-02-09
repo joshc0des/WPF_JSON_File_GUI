@@ -46,6 +46,8 @@ namespace JSON_P_JoshuaHooper
         {
             string selectedColor = (string)cboColors.SelectedItem;
 
+            listBoxData.Items.Clear();
+
             foreach (CarOwner carOwner in _carOwners)
             {
                 if (selectedColor == carOwner.Color)
